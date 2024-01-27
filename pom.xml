@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.3</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>com.levelup</groupId>
+	<artifactId>spring-boot-security-jwt</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>spring-boot-security-jwt</name>
+	<description>Project for levelup</description>
+	
+	<url>https://bitbucket.org/level-upp/level-up/src/master/</url>
+	
+	<licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://spdx.org/licenses/MIT.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Example Organization</name>
+        <url>http://example.com/</url>
+    </organization>
+
+    <scm>
+        <url>https://bitbucket.org/level-upp/level-up/src/master/</url>
+        <connection>git@github.com:example/test.git</connection>
+        <developerConnection>git@github.com:example/test.git</developerConnection>
+    </scm>
+
+    <issueManagement>
+        <system>Issues</system>
+        <url>https://github.com/example/test/issues</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Pipelines</system>
+        <url>https://github.com/example/test/pipelines</url>
+    </ciManagement>
+
+    <contributors>
+        <contributor>
+            <name>Some Contributor</name>
+            <email>some.contributor@example.com</email>
+            <url>http://example.com/</url>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>scrum-master</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </contributor>
+        <contributor>
+            <name>Another Contributor</name>
+            <email>another.contributor@example.com</email>
+            <url>http://example.com/</url>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>product-owner</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </contributor>
+    </contributors>
+
+    <developers>
+        <developer>
+            <id>somedev</id>
+            <email>some.developer@example.com</email>
+            <name>Some Developer</name>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </developer>
+        <developer>
+            <id>otherdev</id>
+            <email>other.developer@example.com</email>
+            <name>Other Developer</name>
+            <organization>Example Organization</organization>
+            <organizationUrl>http://example.com/</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Amsterdam</timezone>
+        </developer>
+    </developers>
+
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
+
+	<dependencies>
+	
+		<dependency>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-thymeleaf</artifactId>
+    		<version>2.2.6.RELEASE</version>
+		</dependency>
+
+		<dependency>
+  			<groupId>org.springframework.boot</groupId>
+ 			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+		<dependency>
+		    <groupId>org.postgresql</groupId>
+		    <artifactId>postgresql</artifactId>
+		    <version>42.5.1</version>
+		    <scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+    <groupId>jakarta.xml.bind</groupId>
+    <artifactId>jakarta.xml.bind-api</artifactId>
+    <version>2.3.2</version>
+</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
